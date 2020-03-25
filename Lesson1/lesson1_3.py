@@ -1,0 +1,5 @@
+# 3. print(n + nn + nnn)
+n = int(input('input n: '))
+nn = int(str(n)+str(n))
+nnn = int(str(n)+str(n)+str(n))
+print(f'{n} + {nn} + {nnn} = {n+nn+nnn}')
