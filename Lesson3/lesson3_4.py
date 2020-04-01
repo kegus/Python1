@@ -14,6 +14,8 @@ def my_func2(x, y):
 while True:
     try:
         x = float(input('Введите действительное положительное число: '))
+        if x <= 0:
+            raise ValueError('Число должно быть положительным')
         y = int(input('Введите целое отрицательное число: '))
         if y >= 0:
             raise ValueError('Число должно быть отрицательным')

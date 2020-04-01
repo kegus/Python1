@@ -16,7 +16,7 @@ def my_title(input_str):
     for item in input_list:
         item = int_func(item) + ' '
         result += item
-    return result[:len(result)-1]
+    return result.strip()
 
 print(int_func(input('Введите слово: ')))
 print(my_title(input('Введите предложение: ')))
