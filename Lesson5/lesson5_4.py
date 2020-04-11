@@ -2,8 +2,6 @@
 
 translate_list = ["один", "два", "три", "четыре"]
 with open("eng.txt", mode="r", encoding="utf-8") as f_eng, open("rus.txt", mode="w", encoding="utf-8") as f_rus:
-    f_eng = open("eng.txt", mode="r", encoding="utf-8")
-    f_rus = open("rus.txt", mode="w", encoding="utf-8")
     file_lines = f_eng.readlines()
     for i, words in enumerate(file_lines):
         words = words.split()
